@@ -3,6 +3,11 @@ from FacebookNode import *
 from collections import defaultdict 
 
 class UltilityFunctions:
+    def mapFunction(line):
+        line = line.split(" ")
+        line = [int(x) for x in line]
+        return line
+        
     def calculateJacardCoeffiecient(adjacencyMatrix):
         allNodeSimilarity = []
         noOfRows = len(adjacencyMatrix)
